@@ -1,0 +1,2 @@
+#membuat container dengan bindmount
+docker container create --name mongodata -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root --mount "type=bind,source=/home/andi/Documents/belajar-docker/mongodata,target=/data/db" mongo:latest
