@@ -1,0 +1,5 @@
+FROM nginx
+
+ENV APP_PORT=80
+
+EXPOSE ${APP_PORT}
