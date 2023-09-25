@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  cron-container:
+    build:
+      context: . # Lokasi Dockerfile dan cronjob file
+      dockerfile: Dockerfile
+    container_name: cron-container
+    restart: always # Container akan selalu restart jika berhenti
+    image: cron-example

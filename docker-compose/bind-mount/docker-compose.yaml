@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  mongo-example:
+    image: mongo:latest
+    container_name: mongo-example
+    ports:
+      - 27017:27017
+    volumes:
+      - ./data:/data/db
